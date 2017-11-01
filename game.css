@@ -1,0 +1,214 @@
+#time{
+    position:absolute;
+    top:40%;
+    left:40%;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+}
+#menu div{
+    margin-left: 80%;
+    margin-top: 20px;
+    text-align:center;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 15px;
+    width:150px;
+    font-family: 'Comfortaa', cursive;
+}
+
+#menu{
+    display:none;
+    background-color: black;
+    opacity:0.9;
+    height: 65%;
+    padding-top:20%;
+}
+#menu div:nth-child(3){
+    display: none;
+       position: absolute;
+    
+    top: 45%;
+}
+#menu div:nth-child(4){
+    display: none;
+       position: absolute;
+
+    top: 52%;
+}
+#menu div:nth-child(5){
+    display: none;
+       position: absolute;
+
+    top: 59%;
+}
+#menu div:nth-child(6){
+    display: none;
+       position: absolute;
+
+    top: 66%;
+}
+
+.sex{
+    display:none;
+    position: absolute;
+    top: 53%;
+}
+
+
+
+
+/*   -----------------------------------GAME INTERFACE --------------------------------------*/
+
+#week{
+    margin-top:20px;
+    margin-left:86%;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    width:100px;
+    height:120px;
+    border: 2px solid black;
+    padding:30px 10px 20px 10px;
+    
+}
+#week p{
+    text-align:center;
+}
+
+#scale{
+    margin-left:83%;
+    margin-top:20px;
+    width:200px;
+    border: 2px solid black;
+     padding-left: 10px;
+    height: 400px;
+   
+}
+#scale img{
+    margin-top: 350px;
+    padding-left: 5px;
+    float:left;
+    width:40px;
+    height:40px;
+}
+#scale .scales{
+    margin-top: 20px;
+    margin-left:-30px;
+    float:left;
+    width: 20px;
+    height: 300px;
+    border:2px solid black;
+}
+#scale .scales div{
+    object-position: bottom;
+  width:100%;
+  height: 100px;
+
+}
+#scale .scales:nth-child(8) div{
+    background-color:#74D4AA    
+}
+#scale .scales:nth-child(4) div{
+  background-color: #DA4887;  
+}
+#scale .scales:nth-child(2) div{
+    background-color:#E8BD63;   
+}
+#scale .scales:nth-child(6) div{
+  background-color: #59D3E3;  
+}
+
+
+#gamePlay{
+    margin-top:-100px;
+    border:2px solid black;
+    width:700px;
+    height:240px;
+}
+.mailAndRules{
+    width:40px;
+    height: 40px;
+}
+
+#user{
+    margin-left:10px;
+    margin-top:30px;
+    border:2px solid black;
+    border-radius: 100px;
+        width:220px;
+    height:200px;
+    background-image: url(StudentBoy2.png);
+}
+#go{
+    margin-top:-150px;
+    margin-right: 50px;
+    float: right;
+    width:100px;
+    height:100px;
+}
+.mailAndRules{
+    position:absolute;
+    top:530px;
+    left:350px;
+}
+.mailAndRules:first-child{
+    
+    left: 300px;
+}
+
+
+
+
+/*---------------------------------__RULES__--------------------------------------------*/
+
+#rules{
+    display: none;
+    position: absolute;
+    top: 20px;
+    width: 450px;
+    left: 25%;
+    border: 2px solid black;
+    z-index: 9999;
+    background: white;
+
+}
+#rules h2{
+    margin-top: 0px;
+        margin:20px;
+}
+#rules div{
+background:black;
+    padding: 5px;
+    
+
+}
+#rules div img{
+    width: 20px;
+    height: 20px;
+    margin-left: 95%;
+    
+}
+#rules p{
+    margin: 20px;
+}
+#rules p:last-of-type{
+    margin-bottom: 40px;
+}
+
+
+/*-----------------------------___TASKS___--------------------------------------------*/
+#tasks1{
+position: absolute;
+    top: 40px;
+    left: 30%;
+}
+#tasks{
+
+    width: 450px;
+}
+#tasks img{
+    margin:20px;
+    width: 180px;
+}
