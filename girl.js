@@ -1,0 +1,1 @@
+$('#user').css('backgroundImage','url(StudentGirl.png)');

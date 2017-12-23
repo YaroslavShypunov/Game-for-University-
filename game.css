@@ -1,3 +1,8 @@
+#logo{
+    width: 100px;
+    margin-top: -250px;
+    margin-left: 20px;
+}
 #time{
     position:absolute;
     top:40%;
@@ -62,6 +67,9 @@ a{
 
 /*   -----------------------------------GAME INTERFACE --------------------------------------*/
 
+#game{
+	display: none; 
+}
 #week{
     margin-top:20px;
     margin-left:86%;
@@ -94,6 +102,7 @@ a{
     height:40px;
 }
 #scale .scales{
+    overflow: hidden;
     margin-top: 20px;
     margin-left:-30px;
     float:left;
@@ -127,11 +136,6 @@ a{
     width:700px;
     height:240px;
 }
-.mailAndRules{
-    width:40px;
-    height: 40px;
-}
-
 #user{
     margin-left:10px;
     margin-top:30px;
@@ -140,6 +144,8 @@ a{
         width:220px;
     height:200px;
     background-image: url(StudentBoy2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 #go{
     margin-top:-150px;
@@ -152,6 +158,8 @@ a{
     position:absolute;
     top:530px;
     left:350px;
+	width:40px;
+    height: 40px;
 }
 .mailAndRules:first-child{
     
@@ -164,7 +172,7 @@ a{
 /*---------------------------------__RULES__--------------------------------------------*/
 
 #rules{
-    display: none;
+    display: block;
     position: absolute;
     top: 20px;
     width: 450px;
@@ -211,4 +219,72 @@ position: absolute;
 #tasks img{
     margin:20px;
     width: 180px;
+}
+#tasks img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/*------------------------------__PLAN Zajec___-----------------------------------------*/
+#plan div{
+background:black;
+    padding: 5px;
+    
+
+}
+#plan div img{
+    width: 20px;
+    height: 20px;
+    margin-left: 95%;
+    
+}
+#plan{
+	    display: none;
+    position: absolute;
+    top: 20px;
+    width: 60%;
+    left: 25%;
+    border: 2px solid black;
+    z-index: 9999;
+    background: white;
+}
+
+#plan table{
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 20px 100px;
+    
+}
+#plan h1{
+	margin: 20px 350px;
+    
+}
+#plan table td {
+	border: 1px solid black;
+	text-align: center;
+	width: 80px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.popularSprawy{
+	font-size: 12px;
+	font-weight: bold;
+	color: blue;
+	padding:0px;
+}
+.uczelnia{
+		font-size: 12px;
+	font-weight: bold;
+	color: orange;
+	padding:0px;
+}
+.loveSprawy{
+			font-size: 12px;
+	font-weight: bold;
+	color: red;
+	padding:0px;
 }

@@ -10,28 +10,29 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Quicksand" rel="stylesheet">
 </head>
 <body>
- <!--
+
 <img src="https://cdn.tproger.ru/wp-content/uploads/2017/06/slack1.gif" alt="" id="time">
 
     <div id="menu">
-     <div id="startGame">Nowa gra</div>
+    <img src="logo.svg" alt="" id="logo">
+     <div id="startGame">Новая игра</div>
 
-     <div id="lang">Język</div>
+     <div id="lang">Язык</div>
      
-     <div class="language">English</div>
-     <div class="language">Русский</div>
-     <div class="language">Українській</div>
-     <div class="language">Polski</div>
+     <div class="language" id="englishLang">English</div>
+     <div class="language" id="russianLang">Русский</div>
+     <div class="language" id="ukranianLang">Українській</div>
+     <div class="language" id="polskiLang">Polski</div>
      
 
      
-     <div id="ManWoman">Wybor postaci</div>
+     <div id="ManWoman">Выбор пола</div>
      
-     <div class="sex">Facet</div>
-     <div class="sex">Dziewczyna</div>
+     <div class="sex">Мужчина</div>
+     <div class="sex">Женщина</div>
  </div>
  
- -->
+
 <!--    GAME  -->
 
   <div id="game">
@@ -79,14 +80,14 @@
             <img src="close.svg" alt="">
         </div>
         <h2>HEY!</h2>
-        <p>Добро пожаловать в игру Жизнь Студента! Это игра о первокурсснике который только поступил в университет, и начинаю с этого момента у него есть 16 недель до здачи сессии. Два раза в неделю тебе нужно будет выбрать одну из четырех задач, которую будет выполнять твой герой:</p>
+        <p>Добро пожаловать в игру Жизнь Студента! Это игра о первокурсснике который только поступил в университет, и начиная с этого момента у него есть 16 недель до здачи сессии. Два раза в неделю тебе нужно будет выбрать одну из четырех задач, которую будет выполнять твой герой:</p>
         <ol> 
             <li>Учеба</li>
             <li>Отношения</li>
             <li>Популярность</li>
             <li>Материальная обеспечинность</li>
         </ol>
-        <p>Твой выбор будет влиять на панель справа отнимая или добавляя баллы в каждый из столбец, которая в свою очередь будет влиять на самого главного героя. Изначально каждый столбец установлен на 100 баллов, если хоть один из столбцов будет меньше 10 - игра проиграна. </p>
+        <p>Твой выбор будет влиять на панель справа отнимая или добавляя баллы в каждый из столбец, которая в свою очередь будет влиять на самого главного героя. Изначально каждый столбец установлен на 100 баллов, если хоть один из столбцов будет меньше 10 - игра проиграна. Также как можно чаще смотри на свой календарь, для того чтобы подготовить своего персонажа к мероприятиям, которые запланированы. Важно, во время мериприятия ты можешь выбрать только ту иконку, которая отвечаеть виду мероприятия, поэтому если твой герой будет иметь какие-то проблемы с другими задачами, ты проиграешь. </p>
         <p>Я верю в то, что ты справишься, закрывай окно и удачи!</p>
     </div>
     
@@ -94,13 +95,197 @@
 <div id="tasks1">    
  <div id="tasks">
          <img src="tasks/attendance_list.png" alt="" id="study"> 
+         <audio id='studyAu' src="audio/study.m4a" ></audio>
          <img src="tasks/Career-Fair.png" alt="" id="popular">
+         <audio id='popularAu' src="audio/popularnosc.mp3" ></audio>
          <img src="tasks/customer_person_people_woman_you_1627.png" alt="" id="relationship">
+         <audio src="audio/relat.mov" id="relationshipAu"></audio>
          <img src="tasks/man-311326_640.png" alt="" id="work">
+         <audio src="audio/work.mov" id="workAu"></audio>
      </div>
  </div>     
        </div>
 
-
+<div id="plan">
+        <div>
+            <img src="close.svg" alt="">
+        </div>
+	<h1>План занятий</h1>
+	<table id="forKal">
+		<tr id="forKal0">
+		<td>Дни недели</td>
+		<td>Понедельник</td>
+		<td>Вторник</td>
+		<td>Среда</td>
+		<td>Четверг</td>
+		<td>Пятница</td>
+		<td>Суббота</td>
+		<td>Воскресенье</td>
+		</tr>
+		
+		<tr id="forKal1"><td>Неделя 1</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td class="popularSprawy">День Рождение у твоего друга</td>
+		<td></td>
+		<td></td>
+		</tr>
+		
+		<tr id="forKal2"><td>Неделя 2</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		</tr>
+		
+		<tr id="forKal3"><td>Неделя 3</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		</tr>
+		
+		<tr id="forKal4">
+		 <td>Неделя 4</td>
+		 <td></td>
+		 <td></td>
+		 <td></td>
+		 <td></td>
+		 <td></td>
+		 <td class="uczelnia">Первый модуль</td>
+		 <td></td>
+		</tr>
+		
+		<tr id="forKal5"><td>Неделя 5</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		</tr>
+		
+		<tr id="forKal6"><td>Неделя 6</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		</tr>
+		
+		<tr id="forKal7"><td>Неделя 7</td>
+		<td></td>
+		<td></td>
+		<td class="uczelnia">Модуль</td>
+		<td></td>
+		<td class="uczelnia">Модуль</td>
+		<td></td>
+		<td></td>
+		</tr>
+		
+		<tr id="forKal8">
+		 <td>Неделя 8</td>
+		 <td></td>
+		 <td></td>
+		 <td></td>
+		 <td></td>
+		 <td></td>
+		 <td></td>
+		 <td></td>
+		</tr>
+				<tr id="forKal9"><td>Неделя 9</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td class="loveSprawy">День Рождение у твоей второй половинки</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		</tr>
+		
+		<tr id="forKal10"><td>Неделя 10</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		</tr>
+		
+		<tr id="forKal11"><td>Неделя 11</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		</tr>
+		
+		<tr id="forKal12">
+		 <td>Неделя 12</td>
+		 <td></td>
+		 <td></td>
+		 <td></td>
+		 <td class="popularSprawy">Самая большая вечеринка в твоем городе</td>
+		 <td></td>
+		 <td></td>
+		 <td></td>
+		</tr>
+		 		<tr id="forKal13"><td>Неделя 13</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		</tr>
+		
+		<tr id="forKal14"><td>Неделя 14</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		</tr>
+		
+		<tr id="forKal15"><td>Неделя 15</td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		</tr>
+		
+		<tr id="forKal16">
+		 <td>Неделя 16</td>
+		 <td  class="uczelnia">Екзамен</td>
+		 <td  class="uczelnia">Екзамен</td>
+		 <td  class="uczelnia">Екзамен</td>
+		 <td  class="uczelnia">Екзамен</td>
+		 <td  class="uczelnia">Екзамен</td>
+		 <td  class="uczelnia">Екзамен</td>
+		 <td  class="uczelnia">Екзамен</td>
+		</tr>
+		
+	</table>
+</div>
 </body>
 </html>
